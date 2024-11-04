@@ -1,6 +1,7 @@
 import React from 'react';
 import './RegistroTable.css';
-import cronograma from '../img/cronograma.png';
+import Usuarios from '../img/User.png';
+
 
 
 const registros = [
@@ -22,7 +23,7 @@ function RegistroTable() {
   return (
     <div className="content">
       <h1>REGISTROS 
-      <img src={cronograma} className='dashIcon' alt='dashboard icon' />
+      <img src={Usuarios} className='dashIcon' alt='dashboard icon' />
       </h1>
       <table>
         <thead>
