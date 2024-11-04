@@ -1,52 +1,89 @@
+/* RegistroTable.css */
 .content {
-    flex: 1;
-    padding: 20px;
-    height: 100%;
-    background-color: #f0e6d6;
-    
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  background-color: #f0e6d6;
+}
+
+.dashIcon {
+  width: 50px;
+  height: 50px;
+  margin-left: auto; /* Alinear el ícono a la derecha */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  overflow-x: auto; /* Permite scroll horizontal en pantallas pequeñas */
+}
+
+table, th, td {
+  border: 1px solid #003366;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #003366;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.content h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
   }
 
-  .dashIcon{
-    width: 50px;
-    height: 50px;
-    vertical-align: center;
-    padding-left: 1600px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 50px;
-  }
-  
-  table, th, td {
-    border: 1px solid #003366;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #003366;
-    color: #fff;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .actions button {
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
   .content h1 {
-    text-align: left;
-    margin-bottom: 30px;
-    font-size: 35px;
+    font-size: 1.8rem;
   }
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .dashIcon {
+    width: 40px;
+    height: 40px;
+  }
+}

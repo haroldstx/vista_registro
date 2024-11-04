@@ -1,8 +1,7 @@
+// RegistroTable.js
 import React from 'react';
 import './RegistroTable.css';
 import Usuarios from '../img/User.png';
-
-
 
 const registros = [
   { id: '0511-2004-01387', nombre: 'Jorge Paz', fecha: '16/10/2024' },
@@ -22,9 +21,10 @@ function RegistroTable() {
 
   return (
     <div className="content">
-      <h1>REGISTROS 
-      <img src={Usuarios} className='dashIcon' alt='dashboard icon' />
-      </h1>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h1>REGISTROS</h1>
+        <img src={Usuarios} className="dashIcon" alt="dashboard icon" />
+      </div>
       <table>
         <thead>
           <tr>
